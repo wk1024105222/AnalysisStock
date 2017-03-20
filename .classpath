@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/oracle_jdbc.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/ejb3-persistence-1.0.2.GA.jar"/>
+	<classpathentry kind="lib" path="lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="lib/c3p0-0.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/cglib-2.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="lib/infinispan-core-4.2.1.CR1.jar"/>
+	<classpathentry kind="lib" path="lib/javassist-3.12.0.GA.jar"/>
+	<classpathentry kind="lib" path="lib/jbosscache-core-3.2.1.GA.jar"/>
+	<classpathentry kind="lib" path="lib/oscache-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/proxool-0.8.3.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/swarmcache-1.0RC2.jar"/>
+	<classpathentry kind="lib" path="lib/jsoup-1.7.3.jar" sourcepath="D:/Workspaces/AnalysisStock/lib/jsoup-1.7.3-sources.jar"/>
+	<classpathentry kind="lib" path="lib/jexcelapi_2_6_12/jxl.jar" sourcepath="D:/Workspaces/AnalysisStock/lib/jexcelapi_2_6_12/src"/>
+	<classpathentry kind="lib" path="lib/poi/poi-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="lib/poi/poi-examples-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="lib/poi/poi-excelant-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="lib/poi/poi-ooxml-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="lib/poi/poi-ooxml-schemas-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="lib/poi/poi-scratchpad-3.11-20141221.jar"/>
+	<classpathentry kind="lib" path="lib/Gson/gson-1.5.jar"/>
+	<classpathentry kind="lib" path="lib/abel533.jar" sourcepath="D:/Workspaces/AnalysisStock/lib/abel533src.zip"/>
+	<classpathentry kind="lib" path="lib/spring/spring-aop-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-aspects-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-beans-3.2.6.RELEASE.jar" sourcepath="D:/Workspaces/AnalysisStock/lib/spring/spring-beans-3.2.6.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-build-src-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-context-3.2.6.RELEASE.jar" sourcepath="D:/Workspaces/AnalysisStock/lib/spring/spring-context-3.2.6.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-context-support-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-core-3.2.6.RELEASE.jar" sourcepath="D:/Workspaces/AnalysisStock/lib/spring/spring-core-3.2.6.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-expression-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-framework-bom-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-instrument-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-instrument-tomcat-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-jdbc-3.2.6.RELEASE.jar" sourcepath="D:/Workspaces/AnalysisStock/lib/spring/spring-jdbc-3.2.6.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-jms-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-orm-3.2.6.RELEASE.jar" sourcepath="D:/Workspaces/AnalysisStock/lib/spring/spring-orm-3.2.6.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-webmvc-portlet-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-oxm-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-webmvc-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-struts-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-test-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-tx-3.2.6.RELEASE.jar" sourcepath="D:/Workspaces/AnalysisStock/lib/spring/spring-tx-3.2.6.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-web-3.2.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/aspectjweaver-1.6.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbcp-1.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-pool-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/jsoup-1.7.3-sources.jar"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_3_EM"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_3_CORE"/>
+	<classpathentry kind="lib" path="lib/htmlparser.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Sun JDK 1.6.0_13"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>
