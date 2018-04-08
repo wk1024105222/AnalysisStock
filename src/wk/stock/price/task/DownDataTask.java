@@ -3,6 +3,14 @@ package wk.stock.price.task;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/***
+ * 股价下载模块的任务entity
+ * @ClassName: DownDataTask
+ * @Description: 
+ * @author wkai
+ * @date 2018年4月8日 上午10:49:46
+ *
+ */
 public class DownDataTask {
 
 	private String code;

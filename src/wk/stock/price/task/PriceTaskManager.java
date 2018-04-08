@@ -18,6 +18,14 @@ import wk.stock.vo.StockInfo;
 import wk.util.LogUtil;
 import wk.util.inf.Task;
 
+/***
+ * 根据downPrice.type生成待下载股价信息任务队列<股票代码, 开始下载时间>
+ * @ClassName: PriceTaskManager
+ * @Description: 
+ * @author wkai
+ * @date 2018年4月8日 上午10:48:17
+ *
+ */
 @Component
 public class PriceTaskManager implements Task<DownDataTask> {
 
@@ -37,18 +45,23 @@ public class PriceTaskManager implements Task<DownDataTask> {
 
 		switch(Integer.parseInt(taskType)) {
 		case 0:
+			//从雅虎下载缺失股价信息 数据库已存最大时间和当前时间 缺失部分
 			downLackFromYahoo();
 			break;
 		case 1:
+			//从新浪财经下载当日股价信息
 			downTdyFromSina();
 			break;
 		case 2:
+			//从新浪财经下载缺失股价信息
 			downLackFromSina();
 			break;
 		case 3:
+			//从雅虎下载所有股价信息
 			downAllFromYahoo();
 			break;
 		case 4:
+			//从新浪财经下载所有股价信息
 			downAllFromSina();
 			break;
 		default:
@@ -105,6 +118,7 @@ public class PriceTaskManager implements Task<DownDataTask> {
 
 		Date today = new Date();
 
+		//获取数据库每支股票最大时间
 		List tmp = priceService.getEveryStockLatestTxnDate();
 
 		Object[] o = null;
@@ -113,7 +127,7 @@ public class PriceTaskManager implements Task<DownDataTask> {
 			if(today.before((Date) o[1])) {
 				continue;
 			}
-			allTask.add(new DownDataTask((String) o[0], new Date()));
+			allTask.add(new DownDataTask((String) o[0], today));
 		}
 
 		LogUtil.downtofile.info("本次任务：" + allTask.size());

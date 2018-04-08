@@ -206,7 +206,7 @@ public class PriceServiceImpl implements PriceService {
 	/**
 	 * 
 	 * <p>Title: downFromSinaTdy</p>
-	 * <p>Description: 从sina 获取当日收盘价</p>
+	 * <p>Description: 从sina 获取当日收盘价 本接口可用于实时查看价格 收盘价需要 15:00后查看</p>
 	 * @param t
 	 * @return
 	 * @see wk.stock.price.service.PriceService#downFromSinaTdy(wk.stock.price.task.DownDataTask)
@@ -396,6 +396,7 @@ public class PriceServiceImpl implements PriceService {
 			LogUtil.downtofile.info(t.toString() + "begindate为空无法下载");
 			return allHtmls;
 		}
+		//获取待下载数据 所有url
 		ArrayList<String> allUrls = getSinaSeasonUrl(t);
 		String html = "";
 

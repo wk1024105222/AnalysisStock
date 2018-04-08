@@ -31,12 +31,12 @@ public class DownLoadPriceAction implements Action<DownDataTask> {
 		return priceTaskManager.getTask();
 	}
 
-	/***
-	 * 0:downLackFromYahoo();
-	   1:downTdyFromSina();
-	   2:downLackFromSina();
-	   3:downAllFromYahoo();
-       4:downAllFromSina();
+	/**
+	 * 0- 从雅虎下载缺失股价信息 数据库已存最大时间和当前时间 缺失部分
+	 * 1-从新浪财经下载当日股价信息
+	 * 2-从新浪财经下载缺失股价信息
+	 * 3-从雅虎下载所有股价信息
+	 * 4-从新浪财经下载所有股价信息
 	 * <p>Title: handle</p>
 	 * <p>Description: </p>
 	 * @param t
@@ -52,11 +52,13 @@ public class DownLoadPriceAction implements Action<DownDataTask> {
 			break;
 		}
 		case 1: {
+			//1-从新浪财经下载当日股价信息 
 			rt = priceService.savePriceFromSinaTdy(t.getCode(),priceService.downFromSinaTdy(t));
 			LogUtil.downtofile.info(rt.getDes());
 			break;
 		}
 		case 2: {
+			//2-从新浪财经下载缺失股价信息
 			ArrayList<String> allHtmls = priceService.downFromSinaSeason(t);
 			for(String a : allHtmls) {
 				rt = priceService.savePriceFromSinaSeason(t.getCode(),t.getBegindate(), a);

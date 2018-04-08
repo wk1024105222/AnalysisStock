@@ -36,9 +36,12 @@ public class DownLoadInfoAction implements Action<StockInfo> {
 			LogUtil.info.info(si + "信息完整,无需更新");
 			return;
 		}
+		//根据股票代码生成新浪财经 公司简介页面htlm 
 		String url = stockInfoService.getSinaStockInfoUrl(si.getCode());
+		//根据公司简介url下载html 待解析
 		String html = NetUtil.getHtmlSourceByUrl(url, 10);
 		
+		//从html中解析 公司名称 上市时间 待入库
 		Result rt = stockInfoService.updateStockInfoFromSina(si,html);
 		LogUtil.info.info(rt.getDes()); 
 	}
