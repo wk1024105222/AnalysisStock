@@ -49,3 +49,7 @@ Temporary Items
 lib/
 testfile/
 log/
+WebRoot/
+.idea/
+.myeclipse/
+.settings/
