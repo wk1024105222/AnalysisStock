@@ -3,7 +3,7 @@ package crawler.util;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-import crawler.util.inf.Action;
+import crawler.base.Action;
 
 @SuppressWarnings("unchecked")
 public class HandleTreadPlus extends Thread {

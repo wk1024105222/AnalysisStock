@@ -2,7 +2,7 @@ package crawler.util;
 
 import java.lang.reflect.Field;
 
-import crawler.stock.vo.StockData;
+import crawler.cases.stock.vo.StockData;
 
 public class ReflectUtil {
 	public static String toString(Object o) {
