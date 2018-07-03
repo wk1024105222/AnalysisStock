@@ -46,10 +46,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+*.class
 lib/
 testfile/
 log/
 WebRoot/
 .idea/
 .myeclipse/
-.settings/
+bin/

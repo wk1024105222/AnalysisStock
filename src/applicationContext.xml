@@ -20,29 +20,29 @@
         </property>  
     </bean>
 
-	<context:component-scan base-package="wk.stock.price.*" />
-	<context:component-scan base-package="wk.stock.info.*" />
-	<context:component-scan base-package="wk.stock.bis.*" />
-	<context:component-scan base-package="wk.stock.gain.*" />
-	<context:component-scan base-package="wk.stock.ppcc.*" />
-	<context:component-scan base-package="wk.stock.macd.*" />
-	<context:component-scan base-package="wk.stock.share.*" />
-	<context:component-scan base-package="wk.stock.task" />
+	<context:component-scan base-package="crawler.stock.price.*" />
+	<context:component-scan base-package="crawler.stock.info.*" />
+	<context:component-scan base-package="crawler.stock.bis.*" />
+	<context:component-scan base-package="crawler.stock.gain.*" />
+	<context:component-scan base-package="crawler.stock.ppcc.*" />
+	<context:component-scan base-package="crawler.stock.macd.*" />
+	<context:component-scan base-package="crawler.stock.share.*" />
+	<context:component-scan base-package="crawler.stock.task" />
      
 
-<!--     <context:component-scan base-package="wk.fund.info.*" />-->
-<!--     <context:component-scan base-package="wk.fund.price.*" />-->
-<!--     <context:component-scan base-package="wk.fund.manager.*" />-->
-<!--     <context:component-scan base-package="wk.fund.task" />-->
+<!--     <context:component-scan base-package="crawler.fund.info.*" />-->
+<!--     <context:component-scan base-package="crawler.fund.price.*" />-->
+<!--     <context:component-scan base-package="crawler.fund.manager.*" />-->
+<!--     <context:component-scan base-package="crawler.fund.task" />-->
     
-<!--	<import resource="./wk/stock/bis/resource/Spring-Bis.xml"/>-->
-<!--	<import resource="./wk/stock/price/resource/Spring-Price.xml"/>-->
+<!--	<import resource="./crawler/stock/bis/resource/Spring-Bis.xml"/>-->
+<!--	<import resource="./crawler/stock/price/resource/Spring-Price.xml"/>-->
 
-	<bean id="handleTreadPlus" class="wk.util.HandleTreadPlus" scope="prototype">
+	<bean id="handleTreadPlus" class="crawler.util.HandleTreadPlus" scope="prototype">
 		<property name="action">
-<!--		<ref bean="downLoadInfoAction" />-->
+		<ref bean="downLoadInfoAction" />
 <!-- 			<ref bean="computeGainAction" /> -->
- 			<ref bean="downLoadPriceAction" /> 
+ 			<!--<ref bean="downLoadPriceAction" /> -->
 <!-- 			<ref bean="computeAllStocksPPCCAction" /> -->
 <!--			<ref bean="computeMacdAction" />-->
 <!-- 			<ref bean="downLoadShareAction" /> -->
@@ -73,11 +73,11 @@
 
 	<aop:config>
 		<aop:pointcut id="interceptorPointCuts"
-			expression="execution(* wk.stock.*.service.impl.*.*(..)) || execution(* wk.fund.*.service.impl.*.*(..))" />
+			expression="execution(* crawler.stock.*.service.impl.*.*(..)) || execution(* crawler.fund.*.service.impl.*.*(..))" />
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="interceptorPointCuts" />
 <!--		|| -->
-<!--						execution(* wk.stock.price.service.impl.*.*(..)) || -->
-<!--						execution(* wk.stock.info.service.impl.*.*(..))-->
+<!--						execution(* crawler.stock.price.service.impl.*.*(..)) || -->
+<!--						execution(* crawler.stock.info.service.impl.*.*(..))-->
 	</aop:config>
 
 </beans>

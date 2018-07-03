@@ -68,19 +68,19 @@
 
 
 		<!-- 配置持久化映射文件 -->
-		<mapping resource="wk/stock/vo/StockData.hbm.xml" />
-		<mapping resource="wk/stock/vo/StockInfo.hbm.xml" />
-		<mapping resource="wk/stock/vo/MacdCross.hbm.xml" />
-		<mapping resource="wk/stock/vo/Ppcc.hbm.xml" />
-		<mapping resource="wk/stock/vo/Income.hbm.xml" />
-		<mapping resource="wk/stock/vo/Balance.hbm.xml" />
-		<mapping resource="wk/stock/vo/Cashflow.hbm.xml" />
-		<mapping resource="wk/stock/vo/PriceDownLog.hbm.xml" />
-		<mapping resource="wk/stock/vo/Stockbonus.hbm.xml" />
-		<mapping resource="wk/fund/vo/Funddata.hbm.xml" />
-		<mapping resource="wk/fund/vo/Fundinfo.hbm.xml" />
-		<mapping resource="wk/fund/vo/FundManager.hbm.xml" />
-		<mapping resource="wk/fund/vo/ManageHistory.hbm.xml" />
+		<mapping resource="crawler/stock/vo/StockData.hbm.xml" />
+		<mapping resource="crawler/stock/vo/StockInfo.hbm.xml" />
+		<mapping resource="crawler/stock/vo/MacdCross.hbm.xml" />
+		<mapping resource="crawler/stock/vo/Ppcc.hbm.xml" />
+		<mapping resource="crawler/stock/vo/Income.hbm.xml" />
+		<mapping resource="crawler/stock/vo/Balance.hbm.xml" />
+		<mapping resource="crawler/stock/vo/Cashflow.hbm.xml" />
+		<mapping resource="crawler/stock/vo/PriceDownLog.hbm.xml" />
+		<mapping resource="crawler/stock/vo/Stockbonus.hbm.xml" />
+		<mapping resource="crawler/fund/vo/Funddata.hbm.xml" />
+		<mapping resource="crawler/fund/vo/Fundinfo.hbm.xml" />
+		<mapping resource="crawler/fund/vo/FundManager.hbm.xml" />
+		<mapping resource="crawler/fund/vo/ManageHistory.hbm.xml" />
 
 
 
